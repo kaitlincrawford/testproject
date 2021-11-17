@@ -10,10 +10,6 @@ def home(request):
    return render(request, 'shop/home.html',
                  {'shop': home})
 
-def aboutus(request):
-   return render(request, 'shop/aboutus.html',
-                 {'shop': aboutus})
-
 @login_required
 def product_list(request, category_slug=None):
     category = None
