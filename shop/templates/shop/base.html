@@ -32,7 +32,7 @@
         <ul class="nav navbar-nav navbar-right">
                 <li><a href="{% url 'shop:home' %}">Home</a></li>
                 <li><a href="{% url "shop:product_list" %}">Products</a></li>
-                <li><a href="{% url "shop:aboutus" %}">About Us</a></li>
+                <li><a href="{% url "shop:product_list" %}">About Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
